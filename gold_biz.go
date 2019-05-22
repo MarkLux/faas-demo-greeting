@@ -2,6 +2,7 @@ package gold
 
 import (
 	"log"
+	"github.com/MarkLux/GOLD/serving/common"
 )
 
 func (s *GoldService) OnInit() {
