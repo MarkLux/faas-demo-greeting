@@ -7,7 +7,7 @@ import (
 func (s *GoldService) OnInit() {
 }
 
-func (s *GoldService) OnHandle(req *goldrpc.GoldRequest, rsp *goldrpc.GoldResponse) error {
+func (s *GoldService) OnHandle(req *common.GoldRequest, rsp *common.GoldResponse) error {
 	userName := req.Data["name"].(string)
 	log.Println("userName: " + userName)
 	greeting := "hello, " + userName
